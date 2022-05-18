@@ -16,7 +16,6 @@ export default function YelpSearch() {
     setLoading(true);
     // use fetch to make a request to your netlify yelp function. Be sure to pass the search query as a query param in the URL
     const { data : { businesses } } = await getYelpData(yelpQuery);
-    console.log(businesses);
     // put the jsonified data in state and set the loading state to false
     setYelpData(businesses);
     setLoading(false);

@@ -15,7 +15,6 @@ export default function WeatherSearch() {
         // set the loading state to true
         // use fetch to make a request to your netlify weather function. Be sure to pass the location as a query param in the URL
     const weatherData = await getWeatherData(weatherQuery);
-    console.log(weatherData.daily);  
   
         // put the jsonified data in state and set the loading state to false
     setWeather(weatherData.daily);
