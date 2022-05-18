@@ -9,11 +9,10 @@ export default function BusinessesList({ yelpData }) {
           <div className='yelp'>
             <h2>{business.name}</h2>
             <p>Ph: {business.phone}</p>
-            <img src={business.image_url} />
-            <p>{business.price}</p>
+            <img src={business.image_url} alt='photo of business'/>
+            <p>Price Range: {business.price} / 5</p>
           </div>
         </a>
-        
       )}
     </div>
   );

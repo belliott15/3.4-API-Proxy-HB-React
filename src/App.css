@@ -83,3 +83,8 @@ label {
 .yelp img{
   height: 80px;
 }
+
+.yelp{
+  border: 3px red inset;
+  margin: 5px;
+}
