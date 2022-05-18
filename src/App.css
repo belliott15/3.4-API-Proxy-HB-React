@@ -71,3 +71,7 @@ section li {
 label {
   display: block;
 }
+
+.card img{
+  height: 100px;
+}
