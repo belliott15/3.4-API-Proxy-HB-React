@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { getWeatherData } from './services/fetch.utils';
-import ForecastList from './services/ForecastList';
+import ForecastList from './ForecastList';
 import Spinner from './Spinner';
 
 export default function WeatherSearch() {
