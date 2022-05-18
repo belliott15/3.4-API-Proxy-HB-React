@@ -88,3 +88,25 @@ label {
   border: 3px red inset;
   margin: 5px;
 }
+
+.spinner{
+  font-size: 2rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  animation: drop 1s forwards infinite;
+}
+
+@keyframes drop {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(400px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+  
+}

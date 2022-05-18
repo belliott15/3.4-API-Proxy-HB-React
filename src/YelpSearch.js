@@ -26,9 +26,9 @@ export default function YelpSearch() {
     <section className='yelp'>
       {/* make the fetch on submit */}
       <form onSubmit={handleYelpSubmit}>
-        Search yelp for a city
+        Search yelp for a US city
         {/* add inputs/labels for city name, state, and country, using all the things we need with react forms. Don't forget to use the value property to sync these up with the default values in react state */}
-        <input value={yelpQuery} onChange={(e) => setYelpQuery(e.target.value)}/>
+        <input required value={yelpQuery} onChange={(e) => setYelpQuery(e.target.value)}/>
         <button>Search yelp</button>
       </form>
       {/* Make a BusinessesList component to import and use here. Use a ternery to display a loading spinner (make a <Spinner /> component for this) if the data is still loading. */}
