@@ -5,7 +5,7 @@ import { getPokemon } from './services/fetch.utils';
 
 export default function PokemonSearch() {
       // you'll need to track your pokemon search results, the loading state, and one form field: name. For this form field, set a real initial values (like 'pikachu') so the form populates with a default value.
-  const [query, setQuery] = useState('char');
+  const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(false);
   const [pokemon, setPokemon] = useState([]);
 
@@ -16,7 +16,6 @@ export default function PokemonSearch() {
     setLoading(true);
         // use fetch to make a request to your netlify pokemon function. Be sure to pass the pokemon name as a query param in the URL
     const allPokemon = await getPokemon(query);
-    console.log(allPokemon.data.pokemon);
         // put the jsonified data in state and set the loading state to false
     setPokemon(allPokemon.data.results);
     setLoading(false);
