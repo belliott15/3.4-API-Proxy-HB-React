@@ -2,14 +2,14 @@
 export async function getPokemon(query){
   const rawResponse = await fetch(`/.netlify/functions/pokemon?query=${query}`);
   const data = await rawResponse.json();
-  console.log(data, 'fetch utils data');
+  
   return data;
 }
 
 export async function getYelpData(query){
-  const response = await fetch(`/.netlify/functions/yelp?query=${query}`);
+  const response = await fetch(`/.netlify/functions/yelp?location=${query}`);
   const data = await response.json();
-  
+  console.log(data, 'fetch utils data');
   return data;
 }
 

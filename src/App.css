@@ -73,5 +73,13 @@ label {
 }
 
 .card img{
-  height: 100px;
+  height: 80px;
+}
+
+.card{
+  border: 3px gold inset;
+}
+
+.yelp img{
+  height: 80px;
 }
